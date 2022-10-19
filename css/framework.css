@@ -7,10 +7,18 @@
   align-items: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 /* End Box */
 /* Start Padding + Margin */
 .p-10 {
   padding: 10px;
+}
+
+.p-15 {
+  padding: 15px;
 }
 
 .p-20 {
@@ -57,4 +65,27 @@
   border-radius: 6px;
 }
 
+.rad-10 {
+  border-radius: 10px;
+}
+
 /* End Border */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* Start Width + Height */
+.w-full {
+  width: 100%;
+}
+
+/* Start Components */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* End Components */
