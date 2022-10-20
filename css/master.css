@@ -128,7 +128,6 @@ ul {
   overflow: hidden;
 }
 
-/* Start Content > head */
 .content .head .search::before {
   font-family: var(--fa-style-family-classic);
   content: '\f002';
@@ -198,8 +197,7 @@ ul {
   width: 40px;
 }
 
-/* End Content > head */
-/* Start Content > Wrapper */
+
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
@@ -213,5 +211,59 @@ ul {
   }
 }
 
-/* End Content > Wrapper */
 /* End Content  */
+
+/* Start Welcome Widget */
+.welcome {
+  overflow: hidden;
+}
+
+.welcome .intro img {
+  width: 200px;
+  margin-bottom: -10px;
+}
+
+.welcome .avatar {
+  width: 64px;
+  height: 64px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 0 5px #DDD;
+  margin-left: 20px;
+  margin-top: -32px;
+}
+
+.welcome .body {
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}
+
+.welcome .body>div {
+  flex: 1;
+}
+
+.welcome .visit {
+  margin: 0 15px 15px auto;
+  transition: 0.3s;
+}
+
+.welcome .visit:hover {
+  background-color: var(--blue-alt-clr);
+}
+
+@media (max-width: 767px) {
+  .welcome .intro {
+    padding-bottom: 30px;
+  }
+
+  .welcome .avatar {
+    margin-left: 0;
+  }
+
+  .welcome .body>div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+/* End Welcome Widget */
