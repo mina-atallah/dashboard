@@ -128,6 +128,7 @@ ul {
   overflow: hidden;
 }
 
+/* Start Content > head */
 .content .head .search::before {
   font-family: var(--fa-style-family-classic);
   content: '\f002';
@@ -197,4 +198,20 @@ ul {
   width: 40px;
 }
 
+/* End Content > head */
+/* Start Content > Wrapper */
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+/* End Content > Wrapper */
 /* End Content  */
