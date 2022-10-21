@@ -110,6 +110,14 @@
   background-color: var(--blue-clr);
 }
 
+.bg-green {
+  background-color: var(--green-clr);
+}
+
+.bg-orange {
+  background-color: var(--orange-clr);
+}
+
 .c-white {
   color: white;
 }
@@ -120,6 +128,18 @@
 
 .c-grey {
   color: var(--grey-clr);
+}
+
+.c-blue {
+  color: var(--blue-clr);
+}
+
+.c-green {
+  color: var(--green-clr);
+}
+
+.c-orange {
+  color: var(--orange-clr);
 }
 
 /* End Color */
@@ -134,12 +154,20 @@
   text-align: center;
 }
 
+.fs-13 {
+  font-size: 13px;
+}
+
 .fs-14 {
   font-size: 14px;
 }
 
 .fs-15 {
   font-size: 15px;
+}
+
+.fw-bold {
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -177,6 +205,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-shape {
