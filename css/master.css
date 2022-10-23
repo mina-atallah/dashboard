@@ -364,7 +364,7 @@ ul {
   }
 }
 
-/* Start Tickets Widget */
+/* End Tickets Widget */
 /* Start News Widget */
 .latest-news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
@@ -403,3 +403,34 @@ ul {
 }
 
 /* End News Widget */
+
+/* Start Tasks Widget */
+.tasks .task-row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.tasks .info {
+  flex-grow: 1;
+}
+
+.tasks .done {
+  opacity: 0.5;
+}
+
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+
+.tasks .delete {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tasks .delete:hover {
+  color: var(--red-clr);
+}
+
+/* End Tasks Widget */
