@@ -72,6 +72,10 @@
   padding-bottom: 15px;
 }
 
+.pl-15 {
+  padding-left: 15px;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -90,6 +94,10 @@
 
 .mt-10 {
   margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
 }
 
 .mt-20 {
@@ -148,6 +156,10 @@
 
 .bg-orange {
   background-color: var(--orange-clr);
+}
+
+.bg-red {
+  background-color: var(--red-clr);
 }
 
 .c-white {
@@ -224,6 +236,10 @@
 
 .rad-10 {
   border-radius: 10px;
+}
+
+.rad-half {
+  border-radius: 50%;
 }
 
 .b-none {
