@@ -448,22 +448,57 @@ ul {
 /* End Latest Uploads Widget */
 
 /* Start Latest Projects Widget */
-.lastest-projects ul::before {
+.latest-projects ul::before {
   content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-clr);
 }
 
-.lastest-projects ul li::before {
+.latest-projects ul li::before {
   content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-clr);
+  margin-right: 15px;
+  z-index: 1;
 }
 
-.lastest-projects ul li.done::before {
-  content: "";
+.latest-projects ul li.done::before {
+  background-color: var(--blue-clr);
 }
 
-.lastest-projects ul li.current::before {
-  content: "";
+.latest-projects ul li.current::before {
+  animation: change-clr 0.8s infinite alternate;
 }
 
-.lastest-projects .launch-icon {}
+.latest-projects .launch-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  opacity: 0.2;
+}
 
 /* End Latest Projects Widget */
+
+/* Start Animation */
+@keyframes change-clr {
+
+  from {
+    background-color: white
+  }
+
+  to {
+    background-color: var(--blue-clr);
+  }
+}
+
+/* End Animation */
