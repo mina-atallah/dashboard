@@ -264,6 +264,10 @@
   width: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
 /* Start Components */
 .between-flex {
   display: flex;
