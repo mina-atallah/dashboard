@@ -446,3 +446,24 @@ ul {
 }
 
 /* End Latest Uploads Widget */
+
+/* Start Latest Projects Widget */
+.lastest-projects ul::before {
+  content: "";
+}
+
+.lastest-projects ul li::before {
+  content: "";
+}
+
+.lastest-projects ul li.done::before {
+  content: "";
+}
+
+.lastest-projects ul li.current::before {
+  content: "";
+}
+
+.lastest-projects .launch-icon {}
+
+/* End Latest Projects Widget */
