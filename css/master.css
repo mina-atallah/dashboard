@@ -435,6 +435,14 @@ ul {
 
 /* End Tasks Widget */
 
-/* Start Top Search Widget */
+/* Start Latest Uploads Widget */
+.latest-uploads ul li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
 
-/* End Top Search Widget */
+.latest-uploads ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+/* End Latest Uploads Widget */
