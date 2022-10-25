@@ -588,6 +588,58 @@ ul {
 
 /* End Social Media Widget */
 
+/* Start Projects Table */
+.projects .responsive-table {
+  overflow-x: auto;
+}
+
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+
+.projects thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.projects table td {
+  padding: 15px;
+}
+
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.projects tbody tr td:last-of-type {
+  border-right: 1px solid #eee;
+}
+
+
+.projects tbody tr:hover td {
+  background-color: lightgray;
+}
+
+.projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+
+.projects table img:not(:first-of-type) {
+  margin-left: -20px;
+}
+
+.projects table .label {
+  font-size: 13px;
+}
+
+/* End Projects Table */
+
 /* Start Animation */
 @keyframes change-clr {
 
