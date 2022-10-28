@@ -749,6 +749,58 @@ ul {
   color: black;
 }
 
+.settings-page .widgets-control .control input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.settings-page .widgets-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  border-radius: 4px;
+}
+
+.widgets-control .control label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-clr);
+}
+
+.widgets-control .control label:hover:before {
+  border-color: var(--blue-alt-clr);
+}
+
+.widgets-control .control label::after {
+  content: "\f00c";
+  position: absolute;
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: var(--blue-clr);
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(-360deg);
+  transition: var(--main-transition);
+}
+
+.widgets-control .control input[type="checkbox"]:checked+label::after {
+  transform: scale(1);
+}
+
 /* End Settings */
 
 /* Start Animation */
