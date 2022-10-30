@@ -1022,6 +1022,116 @@ ul {
 
 /* End Profile */
 
+/* Start Projects Page */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width:767px) {
+  .projects-page {
+    grid-template-columns: minmax(220px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-page .project {
+    padding-bottom: 10px;
+  }
+}
+
+.projects-page .project .date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.projects-page .project .team {
+  min-height: 80px;
+  display: flex;
+  align-items: end;
+}
+
+.projects-page .project .team a:not(:first-of-type) {
+  position: relative;
+  margin-left: -18px;
+}
+
+.projects-page .project img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.projects-page .project .do {
+  padding-top: 15px;
+  margin-top: 15px;
+  justify-content: flex-end;
+  font-size: 13px;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .do {
+    flex-direction: column;
+  }
+}
+
+.projects-page .project .do span {
+  font-size: 13px;
+  width: fit-content;
+}
+
+.projects-page .project .do span:not(:last-of-type) {
+  margin-right: 7px;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .do span:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.projects-page .project .info {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .info {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+.projects-page .project .info .prog {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .info .prog {
+    margin-bottom: 13px;
+  }
+}
+
+.projects-page .project .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* End Projects Page */
+
+
 /* Start Animation */
 @keyframes change-clr {
 
